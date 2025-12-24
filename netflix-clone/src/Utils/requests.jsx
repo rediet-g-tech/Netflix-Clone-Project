@@ -1,4 +1,4 @@
-const API_KEY = process.env.VITE_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -13,6 +13,19 @@ const requests = {
 };
 
 export default requests;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // https://api.themoviedb.org/3/tv/popular?api_key=1fd201d518a693b562954ae5c1c66cda&language=en-US
 
